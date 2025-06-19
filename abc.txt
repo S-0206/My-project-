@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #002b5c; /* Dark blue background */
+            color: white;
+            display: flex; /* Enables flexbox */
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Centers vertically */
+            height: 100vh; /* Full viewport height */
+            text-align: center;
+            position: relative; /* Enables positioning for child elements */
+        }
+        .content {
+            max-width: 600px; /* Restricts the width of the content */
+        }
+        .ratings {
+            font-size: 16px; /* Slightly larger font size */
+            font-weight: bold; /* Makes the text bold */
+            margin-bottom: 20px;
+        }
+        .main-content {
+            font-size: 36px; /* Increased font size */
+            font-weight: bold; /* Bold text */
+            margin: 20px 0; /* Add spacing */
+        }
+        .sub-content {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .cta-section {
+            display: flex; /* Flexbox for aligning image and button */
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Aligns items vertically */
+            gap: 20px; /* Adds space between image and button */
+            margin-top: 20px;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #002b5c;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+        .footer-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 150px; /* Increased width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: Rounded corners */
+        }
+        .dot {
+            position: absolute; /* Position relative to the body */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            width: 50px; /* Adjust the size of the dot image */
+            height: 50px; /* Adjust the size of the dot image */
+            display: none; /* Initially hidden */
+        }
+        .main-content span:hover + .dot {
+            display: block; /* Show the dot image on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Ratings section aligned in one line and bold -->
+        <div class="ratings">
+            ★ 4.8 rating on Capterra | ★ 4.8 rating on Xero | ★ 350+ reviews on Xero | ★ 550+ reviews on QuickBooks
+        </div>
+        <!-- Centered and styled text -->
+        <div class="main-content">
+            Create reports, forecasts, <span style="cursor: pointer;">dashboards</span> & consolidations
+        </div>
+        <div class="sub-content">
+            Now with AI-insights ✨
+        </div>
+        <!-- CTA Section with Image and Button -->
+        <div class="cta-section">
+            <div class="image-container">
+                <!-- Replace the URL below with your image path -->
+                <img src="C:\temp\scripts\Screenshot 2025-06-19 151323.png" alt="Expenses Chart">
+            </div>
+            <button class="cta-button">Start 14-day free trial</button>
+        </div>
+        <div class="footer-link">See what we do</div>
+    </div>
+    <!-- Dot image positioned at the bottom-right corner -->
+    <img class="dot" src="C:\temp\scripts\dot.png" alt="Dot Image">
+</body>
+</html>
